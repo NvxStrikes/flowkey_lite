@@ -1,0 +1,10 @@
+schema_version = "1.0.0"
+id = "flowkeys_lite"
+version = "1.0.0"
+name = "FlowKeys Lite"
+tagline = "Clean Object Mode shortcut reference panel."
+maintainer = "NovaStrikes <contact@novastrikes.com>"
+type = "add-on"
+blender_version_min = "4.0.0"
+license = ["SPDX:GPL-3.0-or-later"]
+website = "https://novastrikes.com/"
