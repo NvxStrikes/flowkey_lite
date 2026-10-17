@@ -1,41 +1,69 @@
-# FlowKeys Lite 
+# FlowKeys Lite
 
-**FlowKeys Lite** is a clean, lightweight, and distraction-free shortcut reference panel that lives directly in Blender's N-panel sidebar. 
+**FlowKeys Lite** is a clean, lightweight, distraction-free shortcut reference panel that lives directly in Blender's N-panel sidebar.
 
-This is the **Free Lite Version**, configured to display essential **Object Mode shortcuts only** to help you keep your workflow fluid without viewport clutter.
+This is the **free Lite version**. It shows essential **Object Mode shortcuts only**, so you can keep your flow without viewport clutter, and see if FlowKeys fits your workflow before upgrading.
 
 ---
 
 ## Features
 
-- **Object Mode Reference:** Displays critical hotkeys for Object selection, transformations, camera views, and general operations.
-- **Native Blender Integration:** Designed using Blender's box layouts and custom badge row styles to blend in seamlessly with the native UI.
-- **Modern Extension Support:** Fully compatible as a Blender Extension for **Blender 4.2+** (uses `blender_manifest.toml`), while maintaining compatibility for legacy installations in **Blender 4.0 / 4.1**.
-- **Completely Free:** Open-source under the GNU GPL v3 license.
+- **Object Mode reference:** Hotkeys for selection, transforms, camera/view, and general operations, grouped into Selection, Transform, Object, View, and General.
+- **Native Blender look:** Built with Blender's own box layouts and badge-row styling so it blends into the UI.
+- **Zero viewport clutter:** A passive N-Panel, nothing running in the background.
+- **Cross-platform:** Windows, macOS, Linux.
+- **Free and open source:** GNU GPL v3.
 
 ---
 
-## Installation Guide
+## Installation
 
-### Blender 4.2+ (Extension Mode)
-1. Download this repository as a ZIP archive (or download `FlowKeys_Lite_v1.0.0.zip` from releases).
-2. Open Blender.
-3. Go to **Edit > Preferences > Get Extensions**.
-4. Click the dropdown arrow/cog in the top-right corner and choose **Install from Disk...**.
-5. Select the ZIP package and click **Install**.
+> **Recommended: download the ZIP from the [Releases page](../../releases)** (`FlowKeys_Lite_v1.0.0.zip`), not "Download repository as ZIP". The release ZIP has the correct folder structure for Blender.
 
-### Blender 4.0 / 4.1 (Legacy Mode)
+### Blender 4.2+ (Extension)
+
 1. Open Blender.
-2. Go to **Edit > Preferences > Add-ons**.
-3. Click **Install...** in the top header and select the ZIP package.
-4. Enable the checkbox next to **Interface: FlowKeys Lite**.
+2. Go to **Edit → Preferences → Get Extensions**.
+3. Click the dropdown arrow (top-right) → **Install from Disk…**
+4. Select the ZIP and click **Install**.
+
+### Blender 4.0 / 4.1 (Legacy add-on)
+
+1. Go to **Edit → Preferences → Add-ons**.
+2. Click **Install…** and select the ZIP.
+3. Enable **Interface: FlowKeys Lite**.
 
 ---
 
 ## Usage
-1. Press **N** in the 3D Viewport to toggle the sidebar.
-2. Select the **FlowKeys** tab.
-3. Reference the Object Mode shortcuts list divided neatly into Selection, Transform, Object, View, and General categories.
+
+1. Press **N** in the 3D Viewport to open the sidebar.
+2. Open the **FlowKeys** tab.
+3. Browse the Object Mode shortcuts by category.
+
+---
+
+## FlowKeys Pro vs Lite
+
+Want every mode, search, and notes? Check out **FlowKeys Pro**.
+
+| Feature | Lite (Free) | Pro |
+| --- | :---: | :---: |
+| Object Mode shortcuts | ✅ | ✅ |
+| All 8 3D Viewport modes (Edit, Sculpt, Pose, Weight/Vertex/Texture Paint, Grease Pencil) | ❌ | ✅ |
+| Video Sequencer, Timeline & Dope Sheet | ❌ | ✅ |
+| Auto mode detection | ✅ | ✅ |
+| Instant search | ❌ | ✅ |
+| Hidden Hotkeys filter (shortcuts not in any menu) | ❌ | ✅ |
+| Personal notes, global across all projects | ❌ | ✅ |
+| Notes export (TXT / JSON) | ❌ | ✅ |
+| Favorites, global across all projects | ❌ | ✅ |
+| One-click copy shortcut | ❌ | ✅ |
+| Reads your custom keymaps (✱ marks remaps) | ❌ | ✅ |
+| Viewport HUD overlay | ❌ | ✅ |
+| Preferences (line spacing, colors, accent, HUD anchor) | ❌ | ✅ |
+
+👉 **[Get FlowKeys Pro](https://superhivemarket.com/products/flowkeys)** ($3.99, free updates for Pro license holders)
 
 ---
 
@@ -44,24 +72,16 @@ This is the **Free Lite Version**, configured to display essential **Object Mode
 ```
 flowkeys_lite/
 ├── blender_manifest.toml   # Extension metadata (Blender 4.2+)
-├── __init__.py            # Addon entry point and registration logic
-├── constants.py           # Object Mode shortcut database
-├── panels.py              # UI layout drawing logic
-└── License.txt            # GNU GPL v3 License text
+├── __init__.py             # Add-on entry point and registration
+├── constants.py            # Object Mode shortcut database
+├── panels.py               # UI layout drawing
+└── License.txt             # GNU GPL v3
 ```
 
 ---
 
-## FlowKeys Pro vs Lite
+## License
 
-If you need more advanced reference tools, check out **FlowKeys Pro**:
+Licensed under the **GNU General Public License v3**. See `License.txt`.
 
-| Feature | Lite (Free) | Pro |
-| :--- | :---: | :---: |
-| **Object Mode Shortcuts** | Yes | Yes |
-| **7 Additional Modes** (Edit Mesh, Sculpt, Pose, Paint Modes, Grease Pencil) | No | **Yes** |
-| **Keyword & Description Search** | No | **Yes** (Instant filtering) |
-| **Personal Notes** | No | **Yes** (Saved in .blend) |
-| **UI Customization** (Font size scale, priority highlight, accent themes) | No | **Yes** |
-
-*Built by NovaStrikes | contact@novastrikes.com*
+Built by **NovaStrikes** · [novastrikes.com](https://novastrikes.com) · contact@novastrikes.com
